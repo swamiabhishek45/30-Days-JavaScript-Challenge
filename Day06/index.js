@@ -45,3 +45,34 @@ let evenNum = arr.filter(num => {
 console.log(evenNum);
 
 // Task 9 
+
+const sum = arr.reduce((total, value)=>{
+    return total + value;
+});
+
+console.log("Sum :",sum);
+
+// Activity 4 : Array Iteration
+// Task 10
+for(let i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+}
+
+// Task 11
+arr.forEach((n) => {
+    console.log(n);
+})
+
+// Activity 5 : Multi-dimensional Arrays
+// Task 12
+const twoDarr = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+console.log(twoDarr);
+
+// Task 13
+console.log(twoDarr[0][0]); // first row, first col --> 1
+console.log(twoDarr[1][1]); // 5
