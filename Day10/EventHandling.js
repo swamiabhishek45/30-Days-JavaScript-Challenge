@@ -12,7 +12,7 @@ const img = document.querySelector('img');
 const changeSize = document.querySelector("#changeSize");
 
 changeSize.addEventListener('dblclick', function(){
-    img.style.width = "200px"
+    img.style.width = "500px"
 })
 
 // Activity 2 : Mouse Events
@@ -28,5 +28,20 @@ bgChange.addEventListener('mouseout', function(){
 });
 
 // Activity 3 : Keyboard Events
+// Task 5
+const inputkey = document.querySelector("#inputkey");
+inputkey.addEventListener('keydown', function(){
+    console.log("key pressed to the console");
+})
+
+// Task 6
+const keyup = document.querySelector("#keyup");
+const display = document.querySelector('#display');
+
+keyup.addEventListener("keyup", function(){
+    display.textContent = keyup.value;
+})
 
 
+// Activity 4 : form events
+// Task 7
