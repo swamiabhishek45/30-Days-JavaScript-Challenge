@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="EventHandling.js" defer></script>
-</head>
-<body>
-    <p>This is paragraph</p>
-    <button id="changeText">Change above text</button>
-    <hr>
-    <button id="changeSize">Change Size of image</button>
-    <img src="../JsChallenge.png" width="200px" alt="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="EventHandling.js" defer></script>
+    </head>
+    <body>
+        <p>This is paragraph</p>
+        <button id="changeText">Change above text</button>
+        <hr />
+        <button id="changeSize">Change Size of image</button>
+        <img src="../JsChallenge.png" width="200px" alt="" />
 
-    <p id="bgChange" style="background-color: aquamarine;">Hover me and change my background color</p>
+        <p id="bgChange" style="background-color: aquamarine">
+            Hover me and change my background color
+        </p>
 
-    <span>keydown log to console</span><input type="text" id="inputkey">
+        <span>keydown log to console</span><input type="text" id="inputkey" />
 
-    <hr>
-    <span>keyup print below</span><input type="text" id="keyup">
-    <p id="display"></p>
-</body>
+        <hr />
+        <span>keyup print below</span><input type="text" id="keyup" />
+        <p id="display"></p>
+        <hr />
+
+        <!-- Form  -->
+        <h2>Submission Form</h2>
+        <form
+            id="myForm"
+            style="display: flex; flex-direction: column; width: 200px"
+        >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+
+        <hr />
+        <!-- Drop Down  -->
+        <h2>Drop Down</h2>
+        <select name="" id="mySelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <p id="displayText">Selected value will be displayed here.</p>
+
+        <hr />
+        <!-- Event Delegation  -->
+        <ul id="myList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <hr />
+        <!-- Add new element  -->
+        <div id="parentElement">
+            <h3>New elements add here</h3>
+        </div>
+
+        <button id="addNewElemBtn">Add New Element</button>
+    </body>
 </html>
