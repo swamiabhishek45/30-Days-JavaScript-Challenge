@@ -25,7 +25,7 @@ const divideNum = (nume, deno) => {
     }
 };
 
-// divideNum(23, 0);
+divideNum(23, 7);
 
 // Activity 2 : Finally block
 // Task 3
@@ -69,4 +69,4 @@ function handleCustomError(){
     }
 }
 
-handleCustomError();
+// handleCustomError();
